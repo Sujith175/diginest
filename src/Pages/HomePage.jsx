@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
-import MediaManagement from "../components/MediaManagement";
+import MediaManagement from "./MediaManagement";
 
 const HomePage = () => {
   return (
