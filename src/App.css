@@ -188,13 +188,13 @@ tbody td {
   padding: 12px 10px;
   font-size: 14px;
   color: #333;
-  word-wrap: break-word; /* Prevents long content from breaking layout */
+  word-wrap: break-word;
 }
 
 tbody tr {
   border-bottom: 1px solid #ccc;
 }
-/* Zebra Striping for Rows */
+
 tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
@@ -226,15 +226,15 @@ tbody tr:nth-child(even) {
 }
 
 .action-icon.edit {
-  color: #007bff; /* Blue */
+  color: #007bff;
 }
 
 .action-icon.delete {
-  color: #ff4d4f; /* Red */
+  color: #ff4d4f;
 }
 
 .action-icon.view {
-  color: #014139; /* Green */
+  color: #014139;
 }
 
 body {
@@ -254,7 +254,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,11 +263,11 @@ body {
 
 /* Modal Content */
 .modal-content {
-  background: #f9fbfc; /* Light background color */
+  background: #f9fbfc;
   padding: 20px 30px;
-  width: 600px; /* Width of the modal */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: relative;
   font-family: Arial, sans-serif;
 }
@@ -278,9 +278,9 @@ body {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #333; /* Dark text color */
+  color: #333;
   margin-bottom: 20px;
-  border-bottom: 1px solid #eee; /* Line below the title */
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
 
@@ -292,12 +292,12 @@ body {
   background: none;
   border: none;
   font-size: 18px;
-  color: #ff5f5f; /* Red close icon */
+  color: #ff5f5f;
   cursor: pointer;
 }
 
 .close-btn:hover {
-  color: #d9534f; /* Darker red on hover */
+  color: #d9534f;
 }
 
 /* Form Styling */
@@ -309,11 +309,11 @@ form {
 }
 
 .form-group {
-  width: 48%; /* Half-width fields */
+  width: 48%;
 }
 
 .form-group.full-width {
-  width: 100%; /* Full-width field */
+  width: 100%;
 }
 
 .form-group label {
@@ -360,20 +360,22 @@ input::placeholder {
   background-color: #086c56;
 }
 
-/* pagination */
+
+
 .pagination {
   display: flex;
   justify-content: right;
   align-items: center;
   gap: 5px;
-  margin-top: 40px;
-  position: absolute;
-  right: 20px;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  margin: 0; 
 }
 
 .pagination button {
   border: none;
-  padding: 8px 12px;
+  padding: 2px 12px;
   font-size: 14px;
   cursor: pointer;
   background-color: #f0f0f0;

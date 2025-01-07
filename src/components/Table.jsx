@@ -52,11 +52,11 @@ const Table = ({
           ))}
         </tbody>
       </table>
-      <PaginationComponent
+      {/* <PaginationComponent
         currentPage={currentPage}
         totalPages={totalPages}
         handlePageChange={handlePageChange}
-      />
+      /> */}
     </div>
   );
 };

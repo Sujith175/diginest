@@ -9,6 +9,7 @@ import Searchbar from "../components/Searchbar";
 import Table from "../components/Table";
 import useSearch from "../hooks/useSearch";
 import usePagination from "../hooks/usePagination";
+import PaginationComponent from "../components/PaginationComponent";
 
 const MediaManagement = () => {
   const { media } = useContext(MediaContext);
@@ -107,6 +108,11 @@ const MediaManagement = () => {
             handleEdit={handleEdit}
           />
         )}
+        <PaginationComponent
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </>
   );
