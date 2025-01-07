@@ -31,7 +31,7 @@ const Table = ({
               <td>{item.section}</td>
               <td>{item.title}</td>
               <td>{item.subheading}</td>
-              <td>{item.mediayype}</td>
+              <td>{item.mediatype}</td>
               <td>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   {item.link}
